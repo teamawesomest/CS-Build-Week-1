@@ -22,6 +22,9 @@ def initialize(request):
     players = room.playerNames(player_id)
     return JsonResponse({'uuid': uuid, 'name':player.user.username, 'title':room.title, 'description':room.description, 'players':players}, safe=True)
 
+#make get call to get all the rooms
+#make post to create player
+#make post to login player
 
 # @csrf_exempt
 @api_view(["POST"])
