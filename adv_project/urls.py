@@ -7,3 +7,5 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('api/adv/', include('adventure.urls')),
 ]
+
+#add new endpoints as we make them

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f3ab478db7d69681467f1849f85f7fed6ec6bd2fac3b93fbce404033995c4248"
+            "sha256": "e3f219ce8e54c6b1492c0ba9d5d5639d140ecda6517e9e532c3407dbf62c2ecc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -139,14 +139,6 @@
             ],
             "index": "pypi",
             "version": "==0.3.1"
-        },
-        "django-rest-api": {
-            "hashes": [
-                "sha256:a5b2ad35e37fc9c26ae3a31a8d2851b905745e4ba3977e64235500d9e371a2e0",
-                "sha256:a8f1b33622a7c85f128a953e88679b2bb14ff8e9235eb408316ce104d559f8a3"
-            ],
-            "index": "pypi",
-            "version": "==0.1.5"
         },
         "django-rest-auth": {
             "hashes": [
@@ -405,8 +397,7 @@
                 "sha256:d945239a5639b3ff35b70a88c5f2f491913eb94871780ebfabb2568bd58afc5a",
                 "sha256:eba7011090323c1dadf18b3b689845fd96a61ba0a1dfbd7f24b921398affc357",
                 "sha256:efa1909120ce98bbb3777e8b6f92237f5d5c8ea6758efea36a473e1d38f7d3e4",
-                "sha256:f3900e8a5de27447acbf900b4750b0ddfd7ec1ea7fbaf11dfa911141bc522af0",
-                "sha256:fe47edb6e866a567e4e37eea28898f15fac0885fc83ea09a33580525b9476963"
+                "sha256:f3900e8a5de27447acbf900b4750b0ddfd7ec1ea7fbaf11dfa911141bc522af0"
             ],
             "version": "==1.4.3"
         },
@@ -434,7 +425,6 @@
         },
         "wrapt": {
             "hashes": [
-                "sha256:156c9c5faf92e9b031112fedb1382ba1a7af70aeec4c477ce448e59f38a97c81",
                 "sha256:565a021fd19419476b9362b05eeaa094178de64f8361e44468f9e9d7843901e1"
             ],
             "version": "==1.11.2"
