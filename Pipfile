@@ -6,18 +6,16 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
-python-decouple = "*"
 django-rest-auth = "*"
 django-allauth = "*"
 pusher = "*"
 django-cors-headers = "*"
 gunicorn = "*"
-django-heroku = "*"
-django-rest-api = "*"
 psycopg2-binary = "*"
 dj-database-url = "*"
 whitenoise = "*"
-decouple = "*"
+python-decouple = "*"
+
 
 [dev-packages]
 pylint = "*"
