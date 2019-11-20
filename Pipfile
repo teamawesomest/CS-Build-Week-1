@@ -12,15 +12,11 @@ django-allauth = "*"
 pusher = "*"
 django-cors-headers = "*"
 gunicorn = "*"
-django-heroku = "*"
 django-rest-api = "*"
 psycopg2-binary = "*"
-dj-database-url = "*"
-whitenoise = "*"
-decouple = "*"
+django-heroku = "*"
 
 [dev-packages]
-pylint = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3"
