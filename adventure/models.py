@@ -12,6 +12,19 @@ class Room(models.Model):
     s_to = models.IntegerField(default=0)
     e_to = models.IntegerField(default=0)
     w_to = models.IntegerField(default=0)
+    x = models.IntegerField(default=0)
+    y = models.IntegerField(default=0)
+
+    def show_rooms(self):
+        return{'title': self.title,
+               'description': self.description,
+               'n_to': self.n_to,
+               'e_to': self.e_to,
+               's_to': self.s_to,
+               'w_to': self.w_to,
+               'x': self.x,
+               'y': self.y}
+
     def connectRooms(self, destinationRoom, direction):
         destinationRoomID = destinationRoom.id
         try:
