@@ -7,7 +7,7 @@ room_names = [
 "Fujisawa", "Orly", "Shiree", "Labuhansumbawa", "Ciparay", "Hoktember", "Uttar Char Fasson", "Angoulême",
 "Lincheng", "Souto", "El Fahs", "Matriz de Camaragibe", "Shangyu", "Teberda", "Picoto", "Radocza", "Banī Zayd", "Siaya", "Italó", "Tha Ruea", "Lagoa", "Banjar Tengah",
 "Yŏnmu", "Saratov", "Yotsukaidō", "Gastoúni", "Lysekil", "Valencia", "Georgiyevka", "Lais", "Västerås", "Maslog",
-"Luján de Cuyo", "Dado", "Mouhijärvi", "Stockholm", "Kuala Terengganu", "Songyuan", "Pamoyanan", "Roi Et",
+"Luján de Cuyo", "Dado", "Mouhijärvi", "Stockholm", "Kuala Terengganu", "Songgyuan", "Pamoyanan", "Roi Et",
 "Cabudare", "Belén de Escobar", "Tando Muhammad Khān",
 "Färgelanda", "Kuala Lumpur", "Le Bourget-du-Lac", "Santa Cruz", "Bergen", "Cerrillos", "Rio Formoso", "Almaty",
 "Yinchuan", "Ribeira Seca", "Hanyū", "Linköping", "Firovo", "Sacapulas", "Donostia-San Sebastian", "Tambaksari",
@@ -16,7 +16,7 @@ room_names = [
 "Ralevka", "Lorient", "Suwałki", "Kakan", "Chimanimani", "Sumbersih", "Tarnawatka"
 ]
 
-room_description = [
+room_descriptions = [
 "Realigned fault-tolerant moratorium", "Monitored leading edge process improvement", 
 "User-centric web-enabled data-warehouse", "Reverse-engineered context-sensitive function", 
 "Devolved dynamic hierarchy", "Progressive impactful focus group", "Open-source logistical  system", 
@@ -57,10 +57,12 @@ room_description = [
 
 def make_rooms():
     room = f'{random.choice(room_names)}'
+    # room = [r for r in room_names]
     return room 
 
-def make_description():
-    description = f'{random.choice(room_description)}'
+def make_descriptions():
+    description = f'{random.choice(room_descriptions)}'
+    # description = [d for d in room_descriptions]
     return description
 
 # print('room', make_rooms())

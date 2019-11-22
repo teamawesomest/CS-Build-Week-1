@@ -15,6 +15,9 @@ class Room(models.Model):
     x = models.IntegerField(default=0)
     y = models.IntegerField(default=0)
 
+    def __repr__(self):
+        return f"ID>>{self.id}<<: n_to={self.n_to}; s_to={self.s_to}; e_to={self.e_to}; w_to={self.w_to}"
+
     def show_rooms(self):
         return{'title': self.title,
                'description': self.description,
@@ -23,7 +26,27 @@ class Room(models.Model):
                's_to': self.s_to,
                'w_to': self.w_to,
                'x': self.x,
-               'y': self.y}
+               'y': self.y
+            #    'players': {player.id: player.uuid for player in Player.objects.filter(current_room=self.id)}}
+
+    def connect_rooms(self, connecting_room, direction):
+        '''
+        Connect two rooms in the given n/s/e/w direction
+        '''
+        # print('connecting room', connecting_room.id)
+        reverse_dirs = {"n": "s", "s": "n", "e": "w", "w": "e"}
+        reverse_dir = reverse_dirs[direction]
+        setattr(self, f"{direction}_to", connecting_room.id)
+        setattr(connecting_room, f"{reverse_dir}_to", self.id)
+        self.save()
+        connecting_room.save()
+
+    def get_room_in_direction(self, direction):
+        '''
+        Connect two rooms in the given n/s/e/w direction
+        '''
+        return getattr(self, f"{direction}_to")
+               
 
     def connectRooms(self, destinationRoom, direction):
         destinationRoomID = destinationRoom.id

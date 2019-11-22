@@ -91,7 +91,8 @@ class World:
             # Update iteration variables
             previous_room = room
             room_count += 1
-
+        print('room grid', self.grid)
+        
     def print_rooms(self):
         '''
         Print the rooms in room_grid in ascii characters.
